@@ -1,0 +1,23 @@
+@import "./variables";
+
+.setting-bar {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  top: 40px;
+}
+
+.setting-bar-closed {
+  height: 0;
+  pointer-events: none;
+}
+
+.setting-bar-opened {
+  height: $toolbar-height;
+  pointer-events: auto;
+}
